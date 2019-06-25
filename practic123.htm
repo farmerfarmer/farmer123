@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head >
     <title>檢查申請123456789</title>
     <meta charset="utf-8" />
-   
+  
     <style>
         table {
-            border: 2px;
-            border-collapse: collapse;
+            border: 5px;
+            border-collapse:separate;
             width: 100%;
         }
 
@@ -18,16 +18,21 @@
 
     </style>
 </head>
-<body>
-    <form action="">
+<body style="background-color:greenyellow"><!--style="border:50px solid#b6ff00"-->
+    <form action="HtmlPage3.html">
         <table>
             <tr>
                 <th>
-                <pre style="font-size:30px;">
- 台中市順天中醫診所
-    電子病歷</pre></th>
+                    <div align="center">
+                        <p style="font-size:30px;">
+                            台中市順天中醫診所
+                        </p>
+                    </div>
+                    <div align="center"><p style="font-size:30px;"> 電子病歷</p></div>
+                </th>
+                
             </tr>
-        </table>
+        </table><hr>
         <h>
             病歷號:<input type="number" name="number">
             姓名:<input type="text" name="name">
@@ -62,7 +67,7 @@
             <tr>
                 <th>
                     <p>
-                        病因<input type="text">
+                        主訴<input type="text">
                     </p>
                 </th>
                 <th>
@@ -85,7 +90,7 @@
                 </th>
             </tr>
         </table>
-        對中灶要藥物過敏或是>>>>:<br>例如:<br>
+        對中藥藥物過敏或是>>>>:<br>例如:<br>
         <input type="checkbox">鉤吻<input type="checkbox">首烏<input type="checkbox">蒼朮<input type="checkbox">忍冬
         <input type="checkbox">半夏
         <input type="checkbox">丁香
@@ -99,6 +104,6 @@
 
         <input type="submit"><input type="reset">全部
     </form><br>
-    <button type="button"><a href="http://sunten.tcm.tw/">順天中醫診所</a></button>
+ <a href="http://sunten.tcm.tw/">順天中醫診所</a>
 </body>
 </html>
