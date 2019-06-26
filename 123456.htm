@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="JavaScript">
+function calculate(){
+    if(BMI.hight!= 0)
+ {
+   
+        BMI.Bmi = parseInt(BMI.hight * BMI.hight * 0.01 * 0.01) / parseInt(BMI.weight);
+}
+    else
+{
+    BMI.hight = '0' ;
+}
+
+}
+    </script>
+    <title></title>
+    <meta charset="utf-8" />
+
+</head>
+<body>
+    <table width="300" border="1">
+        <tr>
+            <td colspan="4"><p align="center">慢性腎臟病新病患護理檢表格</p></td>
+        </tr>
+        <tr>
+            <td><textarea name="logo" rows="3" cols="10">Logo</textarea></td>
+            <td>
+                <p style="font-size:small"><b>CLIENT NAME</b><input type="text" name="name "></p>
+                <p style="font-size:small"><b>CONTACT NUMBER</b><input type="text" name="number"></p>
+                <p style="font-size:small"><b>DETE OF BIRTH</b><input type="datetime-local" name="birth"></p>
+            </td>
+            <td>
+                <p>GENDER:</p>
+                <select name="fm">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <p>conntry:</p>
+                <select name="country">
+                    <option>台灣</option>
+                    <option>馬來西亞</option>
+                </select>
+            </td>
+            <td>
+                <pre style="font-size:large"><b>DATE OF
+SCREENING:</b>
+<input type="date" name="day"> </pre>
+                <p><b>REGISTRATION ID </b><input type="password" name="id"></p>
+                <p><b>NRIC<input type="password" name="idd"></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">AADRESS:<textarea name="address" rows="1" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td>
+
+
+            </td>
+
+        </tr>
+    </table>
+
+
+
+    <form action="" name="BMI">
+        身高<input type="text" name="hight" onBlur="calculate();"><br>
+        體重<input type="text"name="weight"onBlur="calculate();"><br>
+              <p>BMI:<input name="Bmi" type="text" readonly="readonly" />   </p>
+              <p>
+                  <input type="submit" name="button" id="button" value="送出" />
+              </p>
+    </form>
+</body>
+</html>
